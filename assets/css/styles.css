@@ -6,11 +6,17 @@ body {
 
 h1 {
   font-family: "RobotoThin";
-  font-size: 3em;
+  font-size: 3.5em;
   font-weight: lighter;
-  padding: 10px 0 10px 0;
+  padding: 10px 0;
+}
+h2 {
+  font-family: "RobotoThin";
+  font-size: 2.5em;
+  font-weight: lighter;
+  padding: 10px 0;
 }
 
-.vorname {
+.grey {
   color: #888888;
 }

@@ -5,10 +5,31 @@
 }
 #main .pull-left {
     padding-top: 100px;
-    padding-left: 60px;
+    padding-left: 20px;
 }
 h2.lead {
-    
+    margin-top: 10px;
+}
+
+#footer a {
+    color: #fff;
+}
+
+
+a img {
+    -webkit-transition: all 0.2s ease; /* Safari and Chrome */
+    -moz-transition: all 0.2s ease; /* Firefox */
+    -ms-transition: all 0.2s ease; /* IE 9 */
+    -o-transition: all 0.2s ease; /* Opera */
+    transition: all 0.2s ease;
+}
+
+a:hover img {
+    -webkit-transform:scale(1.1); /* Safari and Chrome */
+    -moz-transform:scale(1.1); /* Firefox */
+    -ms-transform:scale(1.1); /* IE 9 */
+    -o-transform:scale(1.1); /* Opera */
+     transform:scale(1.1);
 }
 
 /* Sticky footer styles
@@ -25,16 +46,17 @@ body {
     height: auto !important;
     height: 100%;
     /* Negative indent footer by it's height */
-    margin: 0 auto -60px;
+    margin: 0 auto -240px;
 }
 
 /* Set the fixed height of the footer here */
 #push,
 #footer {
-    height: 60px;
+    height: 240px;
+    color: #fff;
 }
 #footer {
-    background-color: #f5f5f5;
+    background-color: #000;
 }
 
 /* Lastly, apply responsive CSS fixes as necessary */

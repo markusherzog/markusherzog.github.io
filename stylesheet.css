@@ -59,13 +59,22 @@ body {
     background-color: #000;
 }
 
-/* Lastly, apply responsive CSS fixes as necessary */
-@media (max-width: 767px) {
+@media (max-width: 992px) {
     #footer {
         margin-left: -20px;
         margin-right: -20px;
         padding-left: 20px;
         padding-right: 20px;
+    }
+
+    #wrap {
+        /* Negative indent footer by it's height */
+        margin: 0 auto -380px;
+    }
+
+    #push,
+    #footer {
+        height: 380px;
     }
 }
 

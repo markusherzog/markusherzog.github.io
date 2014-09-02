@@ -45,17 +45,17 @@ body {
     height: auto !important;
     height: 100%;
     /* Negative indent footer by it's height */
-    margin: 0 auto -240px;
+    margin: 0 auto -200px;
 }
 
 /* Set the fixed height of the footer here */
 #push,
 #footer {
-    height: 240px;
+    height: 200px;
     color: #fff;
 }
 #footer {
-    background-color: #000;
+    background-color: #333;
 }
 
 @media (max-width: 992px) {

@@ -15,8 +15,12 @@ h2.lead {
     color: #fff;
 }
 
+.contact-link {
+    text-indent: -9999px;
+    float: left;
+}
 
-a img {
+.zoom {
     -webkit-transition: all 0.2s ease; /* Safari and Chrome */
     -moz-transition: all 0.2s ease; /* Firefox */
     -ms-transition: all 0.2s ease; /* IE 9 */
@@ -24,7 +28,7 @@ a img {
     transition: all 0.2s ease;
 }
 
-a:hover img {
+.zoom:hover {
     -webkit-transform:scale(1.1); /* Safari and Chrome */
     -moz-transform:scale(1.1); /* Firefox */
     -ms-transform:scale(1.1); /* IE 9 */
@@ -91,4 +95,46 @@ body {
 
 code {
     font-size: 80%;
+}
+
+.sprite {
+    background-image: url(img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-email {
+    width: 32px;
+    height: 32px;
+    background-position: -5px -5px;
+}
+
+.sprite-github {
+    width: 32px;
+    height: 32px;
+    background-position: -47px -5px;
+}
+
+.sprite-googleplus {
+    width: 32px;
+    height: 32px;
+    background-position: -5px -47px;
+}
+
+.sprite-linkedin {
+    width: 32px;
+    height: 32px;
+    background-position: -47px -47px;
+}
+
+.sprite-twitter {
+    width: 32px;
+    height: 32px;
+    background-position: -89px -5px;
+}
+
+.sprite-xing {
+    width: 32px;
+    height: 32px;
+    background-position: -89px -47px;
 }

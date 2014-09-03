@@ -131,3 +131,13 @@ body {
     height: 32px;
     background-position: -89px -47px;
 }
+
+/* Retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), 
+only screen and (min-device-pixel-ratio: 2) {
+    .sprite {
+        background-image: url(img/spritesheet@2x.png);
+        background-size: 126px 84px;
+    }
+}
+

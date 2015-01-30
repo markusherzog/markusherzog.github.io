@@ -39,9 +39,9 @@
 
             $(document).ready(function() {
                 if (screen.width < 768) { 
-                    window.setTimeout(showScrollhint, 1000);
+                    window.setTimeout(showScrollhint, 3000);
                     $("#scroll-hint").click(function() {
-                        $('html,body').animate({scrollTop:$("#footer").offset().top}, 2000);
+                        $('html,body').animate({scrollTop:$("#footer").offset().top}, 500);
                     });
                 }
             });
@@ -53,7 +53,7 @@
             }
             $(window ).scroll(function() {
                 if(screen.width < 768 && !scroll_hint_removed) {
-                    $("#scroll-hint").fadeOut("fast");
+                    $("#scroll-hint").fadeOut(300);
                     scroll_hint_removed = true;
                 }
                 

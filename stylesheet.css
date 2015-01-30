@@ -181,3 +181,30 @@ only screen and (min-device-pixel-ratio: 2) {
     }
 }
 
+#hint-wrapper {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+#scroll-hint {
+    display: none;
+    background-color: #f40;
+    position: relative;
+
+    border-radius: 50%;
+    width: 40px;
+    height: 40px; 
+    /* width and height can be anything, as long as they're equal */
+}
+
+
+#scroll-hint  span {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+

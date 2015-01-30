@@ -188,7 +188,7 @@ only screen and (min-device-pixel-ratio: 2) {
 }
 #scroll-hint {
     display: none;
-    background-color: #f40;
+    background-color: #fa6600;
     position: relative;
 
     border-radius: 50%;
@@ -199,7 +199,8 @@ only screen and (min-device-pixel-ratio: 2) {
 
 
 #scroll-hint  span {
-    margin: 0;
+    margin-left: -1px;
+    margin-top: 1px;
     position: absolute;
     top: 50%;
     left: 50%;

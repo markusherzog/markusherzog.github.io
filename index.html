@@ -41,7 +41,7 @@
                 if (screen.width < 768) { 
                     window.setTimeout(showScrollhint, 1000);
                     $("#scroll-hint").click(function() {
-                        $('html,body').animate({scrollTop:$("#footer").offset().top}, 500);
+                        $('html,body').animate({scrollTop:$("#footer").offset().top}, 2000);
                     });
                 }
             });
@@ -53,7 +53,6 @@
             }
             $(window ).scroll(function() {
                 if(screen.width < 768 && !scroll_hint_removed) {
-                    console.log("scroll")
                     $("#scroll-hint").fadeOut("fast");
                     scroll_hint_removed = true;
                 }

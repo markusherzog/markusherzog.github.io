@@ -1,6 +1,12 @@
-#main .pull-left {
-    padding-top: 100px;
+#main .column1 {
+    padding-top: 20px;
     padding-left: 20px;
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #main .column1 {
+        padding-top: 100px;
+    }
 }
 h2.lead {
     margin-top: 10px;
@@ -11,18 +17,46 @@ h3 {
     font-weight: lighter;
 }
 
+.photo {
+    margin: 0 auto;
+}
+
 #footer a {
     color: #fff;
 }
 
-.contact-link {
+ul.contact {
+    display: table;
+    width: 100%;
+    list-style: none;
+    padding-left: 0;
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    ul.contact {
+        width: inherit;
+    }
+}
+ul.contact li {
+    display: table-cell;
+}
+ul.contact li a {
+    margin: 0;
+    display: block;
+    text-indent: -9999px;
+}
+ul.contact li:first-child {
+    padding-left: o;
+}
+
+/*.contact-link {
     text-indent: -9999px;
     float: left;
 }
 
 .contact-link:nth-of-type(1) {
     margin-left: -4px;
-}
+}*/
 
 .zoom {
     -webkit-transition: all 0.2s ease; /* Safari and Chrome */
@@ -63,7 +97,7 @@ body {
     height: 200px;
     color: #fff;
 }
-#footer {
+#footer, #footer .container {
     background-color: #333;
 }
 
@@ -89,10 +123,18 @@ body {
 /* Custom page CSS
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
+#main {
+    padding-top: 20px;
+    padding-bottom: 20px;
 
-#wrap > .container {
-    padding-top: 60px;
 }
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #main {
+        padding-top: 60px;
+    }
+}
+
 
 .sprite {
     background-image: url(img/spritesheet.png);

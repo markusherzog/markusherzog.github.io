@@ -12,6 +12,10 @@ h3 {
 #footer a {
     color: #fff;
 }
+#footer a.btn-sm {
+    color: #000;
+    text-decoration: none;
+}
 ul.contact {
     display: table;
     list-style: none;

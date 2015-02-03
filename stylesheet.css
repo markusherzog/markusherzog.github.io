@@ -1,13 +1,8 @@
 #main .column1 {
-    padding-top: 20px;
+    padding-top: 100px;
     padding-left: 20px;
 }
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-    #main .column1 {
-        padding-top: 100px;
-    }
-}
+
 h2.lead {
     margin-top: 10px;
 }
@@ -98,6 +93,9 @@ body {
 }
 
 @media (max-width: 992px) {
+    #main .column1 {
+        padding-top: 0;
+    }
     #footer {
         margin-left: -20px;
         padding-left: 20px;
@@ -201,6 +199,8 @@ only screen and (min-device-pixel-ratio: 2) {
     -webkit-transform-origin:70% 70%;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
+
+    cursor: pointer;
 }
 
 

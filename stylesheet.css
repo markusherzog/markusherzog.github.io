@@ -2,31 +2,20 @@
     padding-top: 100px;
     padding-left: 20px;
 }
-
 h2.lead {
     margin-top: 10px;
 }
-
 h3 {
     text-transform: uppercase;
     font-weight: lighter;
 }
-
 #footer a {
     color: #fff;
 }
-
 ul.contact {
     display: table;
-    width: 100%;
     list-style: none;
     padding-left: 0;
-}
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-    ul.contact {
-        width: inherit;
-    }
 }
 ul.contact li {
     display: table-cell;
@@ -39,16 +28,6 @@ ul.contact li a {
 ul.contact li:first-child {
     padding-left: o;
 }
-
-/*.contact-link {
-    text-indent: -9999px;
-    float: left;
-}
-
-.contact-link:nth-of-type(1) {
-    margin-left: -4px;
-}*/
-
 .zoom {
     -webkit-transition: all 0.2s ease; /* Safari and Chrome */
     -moz-transition: all 0.2s ease; /* Firefox */
@@ -56,7 +35,6 @@ ul.contact li:first-child {
     -o-transition: all 0.2s ease; /* Opera */
     transition: all 0.2s ease;
 }
-
 .zoom:hover {
     -webkit-transform:scale(1.1); /* Safari and Chrome */
     -moz-transform:scale(1.1); /* Firefox */
@@ -67,8 +45,7 @@ ul.contact li:first-child {
 
 /* Sticky footer styles
 -------------------------------------------------- */
-html,
-body {
+html, body {
     height: 100%;
     /* The html and body elements cannot have any padding or margin. */
 }
@@ -83,8 +60,7 @@ body {
 }
 
 /* Set the fixed height of the footer here */
-#push,
-#footer {
+#push, #footer {
     height: 200px;
     color: #fff;
 }
@@ -92,41 +68,14 @@ body {
     background-color: #333;
 }
 
-@media (max-width: 992px) {
-    #main .column1 {
-        padding-top: 0;
-    }
-    #footer {
-        margin-left: -20px;
-        padding-left: 20px;
-    }
-
-    #wrap {
-        /* Negative indent footer by it's height */
-        margin: 0 auto -380px;
-    }
-
-    #push,
-    #footer {
-        height: 380px;
-    }
-}
-
 /* Custom page CSS
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
 #main {
-    padding-top: 20px;
+    padding-top: 60px;
     padding-bottom: 20px;
 
 }
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-    #main {
-        padding-top: 60px;
-    }
-}
-
 
 .sprite {
     background-image: url(img/spritesheet.png);
@@ -222,5 +171,28 @@ only screen and (min-device-pixel-ratio: 2) {
     70% { -webkit-transform: scale(1); }
     80% { -webkit-transform: scale(1); }
     100% { -webkit-transform: scale(1); }
+}
+
+@media (max-width: 992px) {
+    #main {
+        padding-top: 10px !important;
+    }
+    #main .column1 {
+        padding-top: 0;
+    }
+    #footer {
+        margin-left: -20px;
+        padding-left: 20px;
+    }
+    #wrap {
+        /* Negative indent footer by it's height */
+        margin: 0 auto -380px;
+    }
+    #push, #footer {
+        height: 380px;
+    }
+    ul.contact {
+        width: 100%;
+    }
 }
 

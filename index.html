@@ -120,7 +120,7 @@
             only screen and (min-device-pixel-ratio:2){.sprite{background-image:url(img/spritesheet@2x.png);background-size:126px 84px;}
             }
             #hint-wrapper{position:fixed;bottom:10px;right:10px;}
-            #scroll-hint{background-color:#fa6600;position:relative;border-radius:50%;width:40px;height:40px;-webkit-animation-name:'pulse_animation';-webkit-animation-duration:3000ms;-webkit-transform-origin:70% 70%;-webkit-animation-iteration-count:infinite;-webkit-animation-timing-function:linear;cursor:pointer;transition: opacity 0.5s linear;}
+            #scroll-hint{background-color:#fa6600;position:relative;border-radius:50%;width:40px;height:40px;-webkit-animation-name:'pulse_animation';-webkit-animation-duration:3000ms;-webkit-transform-origin:70% 70%;-webkit-animation-iteration-count:infinite;-webkit-animation-timing-function:linear;cursor:pointer;transition:opacity 0.5s linear;}
             #scroll-hint span{margin-left:-7px;margin-top:-6px;position:absolute;top:50%;left:50%;color:#fff;}
             @media (max-width:992px){#main{padding-top:10px !important;}
             #main .column1{padding-top:0;}
@@ -131,6 +131,18 @@
             ul.contact{width:100%;}
             }
             .hidden{opacity:0;}
+        </style>
+        <style>
+            @-webkit-keyframes pulse_animation {
+                0% { -webkit-transform: scale(1); }
+                30% { -webkit-transform: scale(1); }
+                40% { -webkit-transform: scale(1.08); }
+                50% { -webkit-transform: scale(1); }
+                60% { -webkit-transform: scale(1); }
+                70% { -webkit-transform: scale(1); }
+                80% { -webkit-transform: scale(1); }
+                100% { -webkit-transform: scale(1); }
+            }
         </style>
         <link rel="icon" href="favicon.ico" />
         <meta name="alexaVerifyID" content="IEVUcEKpdm_IOiMkiEz9Lo8yCI4"/>
@@ -197,8 +209,7 @@
                     }
                 });
             }
-            var scroll_hint_removed = false, small_screen = document.body.clientWidth < 768;
-            var scroll_hint = document.getElementById("scroll-hint");
+            var scroll_hint_removed=false,small_screen=document.body.clientWidth<768,scroll_hint=document.getElementById("scroll-hint");
             if (small_screen) {
                 setTimeout(showScrollhint, 3000);
                 scroll_hint.onclick = function(event) {
@@ -207,7 +218,6 @@
                     window.scrollTo(0, 500);
                 };
             }
-
             function showScrollhint() {
                 var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
                 if(scrollTop == 0) {

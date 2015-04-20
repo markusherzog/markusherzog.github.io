@@ -138,7 +138,6 @@ only screen and (min-device-pixel-ratio: 2) {
     right: 10px;
 }
 #scroll-hint {
-    display: none;
     background-color: #fa6600;
     position: relative;
 
@@ -154,6 +153,7 @@ only screen and (min-device-pixel-ratio: 2) {
     -webkit-animation-timing-function: linear;
 
     cursor: pointer;
+    transition: opacity 0.5s linear;
 }
 
 
@@ -199,4 +199,5 @@ only screen and (min-device-pixel-ratio: 2) {
         width: 100%;
     }
 }
+.hidden{opacity:0;}
 

@@ -116,8 +116,8 @@
             only screen and (min-device-pixel-ratio:2){.sprite{background-image:url(img/spritesheet@2x.png);background-size:126px 84px;}
             }
             #hint-wrapper{position:fixed;bottom:10px;right:10px;}
-            #scroll-hint{background-color:#fa6600;position:relative;border-radius:50%;width:40px;height:40px;-webkit-animation-name:'pulse_animation';-webkit-animation-duration:3000ms;-webkit-transform-origin:70% 70%;-webkit-animation-iteration-count:infinite;-webkit-animation-timing-function:linear;cursor:pointer;transition:opacity 0.5s linear;color:white;padding:0px 11px;font-size:27px;}
-            #scroll-hint span{margin-left:-7px;margin-top:-6px;position:absolute;top:50%;left:50%;color:#fff;}
+            #scroll-hint{background-color:#fa6600;position:relative;border-radius:50%;width:40px;height:40px;-webkit-animation-name:'pulse_animation';-webkit-animation-duration:3000ms;-webkit-transform-origin:70% 70%;-webkit-animation-iteration-count:infinite;-webkit-animation-timing-function:linear;cursor:pointer;transition:opacity 0.5s linear;}
+            #scroll-hint span{position:absolute;top:50%;left:50%;color:#fff;font-size:30px;transform:translate(-50%,-50%);}
             @media (max-width:992px){#main{padding-top:10px !important;}
             #main .column1{padding-top:0;}
             #footer{margin-left:-20px;padding-left:20px;}
@@ -190,7 +190,7 @@
             </div>
         </div>
         <div id="bottom"></div>
-        <div id="hint-wrapper"><div id="scroll-hint" class="hidden">&blacktriangledown;</div></div>
+        <div id="hint-wrapper"><div id="scroll-hint" class="hidden"><span>&blacktriangledown;</span></div></div>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

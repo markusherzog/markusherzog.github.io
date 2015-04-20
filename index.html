@@ -12,14 +12,134 @@
 
         <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
         <link rel="stylesheet" href="stylesheet.css" />-->
-        <link rel="stylesheet" href="stylesheet.min.css" />
+        <!--<link rel="stylesheet" href="stylesheet.min.css" />-->
+        <style>
+        html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+            body{margin:0;}
+            a{background-color:transparent;}
+            a:active,
+            a:hover{outline:0;}
+            h1{margin:.67em 0;font-size:2em;}
+            img{border:0;}
+            button::-moz-focus-inner,
+            input::-moz-focus-inner{padding:0;border:0;}
+            @media print{*,:after,:before{color:#000!important;text-shadow:none!important;background:0 0!important;-webkit-box-shadow:none!important;box-shadow:none!important;}
+            a,
+            a:visited{text-decoration:underline;}
+            a[href]:after{content:" (" attr(href) ")";}
+            img{page-break-inside:avoid;}
+            img{max-width:100%!important;}
+            h2,
+            h3,
+            p{orphans:3;widows:3;}
+            h2,
+            h3{page-break-after:avoid;}
+            }
+            @font-face{font-family:'Glyphicons Halflings';src:url(http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/fonts/glyphicons-halflings-regular.eot);src:url(http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),url(http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/fonts/glyphicons-halflings-regular.woff2) format('woff2'),url(http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/fonts/glyphicons-halflings-regular.woff) format('woff'),url(http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/fonts/glyphicons-halflings-regular.ttf) format('truetype'),url(http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg');}
+            .glyphicon{position:relative;top:1px;display:inline-block;font-family:'Glyphicons Halflings';font-style:normal;font-weight:400;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+            .glyphicon-download:before{content:"\e026";}
+            .glyphicon-chevron-down:before{content:"\e114";}
+            *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+            :after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+            html{font-size:10px;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+            body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff;}
+            a{color:#337ab7;text-decoration:none;}
+            a:focus,
+            a:hover{color:#23527c;text-decoration:underline;}
+            a:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px;}
+            img{vertical-align:middle;}
+            .img-responsive{display:block;max-width:100%;height:auto;}
+            .img-circle{border-radius:50%;}
+            h1,
+            h2,
+            h3{font-family:inherit;font-weight:500;line-height:1.1;color:inherit;}
+            h1,
+            h2,
+            h3{margin-top:20px;margin-bottom:10px;}
+            h1{font-size:36px;}
+            h2{font-size:30px;}
+            h3{font-size:24px;}
+            p{margin:0 0 10px;}
+            .lead{margin-bottom:20px;font-size:16px;font-weight:300;line-height:1.4;}
+            @media (min-width:768px){.lead{font-size:21px;}
+            }
+            .text-left{text-align:left;}
+            ul{margin-top:0;margin-bottom:10px;}
+            .container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;}
+            @media (min-width:768px){.container{width:750px;}
+            }
+            @media (min-width:992px){.container{width:970px;}
+            }
+            @media (min-width:1200px){.container{width:1170px;}
+            }
+            .col-md-4,
+            .col-md-6,
+            .col-md-8{position:relative;min-height:1px;padding-right:15px;padding-left:15px;}
+            @media (min-width:992px){.col-md-4,
+            .col-md-6,
+            .col-md-8{float:left;}
+            .col-md-8{width:66.66666667%;}
+            .col-md-6{width:50%;}
+            .col-md-4{width:33.33333333%;}
+            }
+            .form-control::-moz-placeholder{color:#999;opacity:1;}
+            .form-control:-ms-input-placeholder{color:#999;}
+            .btn-info{color:#fff;background-color:#5bc0de;border-color:#46b8da;}
+            .btn-info:active,
+            .btn-info:focus,
+            .btn-info:hover{color:#fff;background-color:#31b0d5;border-color:#269abc;}
+            .btn-info:active{background-image:none;}
+            .btn-sm{padding:5px 10px;font-size:12px;line-height:1.5;border-radius:3px;}
+            .container:after,
+            .container:before{display:table;content:" ";}
+            .container:after{clear:both;}
+            @-ms-viewport{width:device-width;}
+            #main .column1{padding-top:100px;padding-left:20px;}
+            h2.lead{margin-top:10px;}
+            h3{text-transform:uppercase;font-weight:lighter;}
+            #footer a{color:#fff;}
+            #footer a.btn-sm{color:#000;text-decoration:none;}
+            ul.contact{display:table;list-style:none;padding-left:0;}
+            ul.contact li{display:table-cell;}
+            ul.contact li a{margin:0;display:block;text-indent:-9999px;}
+            ul.contact li:first-child{padding-left:o;}
+            .zoom{-webkit-transition:all 0.2s ease;-moz-transition:all 0.2s ease;-ms-transition:all 0.2s ease;-o-transition:all 0.2s ease;transition:all 0.2s ease;}
+            .zoom:hover{-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-ms-transform:scale(1.1);-o-transform:scale(1.1);transform:scale(1.1);}
+            html,
+            body{height:100%;}
+            #wrap{min-height:100%;height:auto !important;height:100%;margin:0 auto -200px;}
+            #push,
+            #footer{height:200px;color:#fff;}
+            #footer,
+            #footer .container{background-color:#333;}
+            #main{padding-top:60px;padding-bottom:20px;}
+            .sprite{background-image:url(img/spritesheet.png);background-repeat:no-repeat;display:block;}
+            .sprite-email{width:32px;height:32px;background-position:-5px -5px;}
+            .sprite-github{width:32px;height:32px;background-position:-47px -5px;}
+            .sprite-googleplus{width:32px;height:32px;background-position:-5px -47px;}
+            .sprite-linkedin{width:32px;height:32px;background-position:-47px -47px;}
+            .sprite-twitter{width:32px;height:32px;background-position:-89px -5px;}
+            .sprite-xing{width:32px;height:32px;background-position:-89px -47px;}
+            @media only screen and (-webkit-min-device-pixel-ratio:2),
+            only screen and (min-device-pixel-ratio:2){.sprite{background-image:url(img/spritesheet@2x.png);background-size:126px 84px;}
+            }
+            #hint-wrapper{position:fixed;bottom:10px;right:10px;}
+            #scroll-hint{display:none;background-color:#fa6600;position:relative;border-radius:50%;width:40px;height:40px;-webkit-animation-name:'pulse_animation';-webkit-animation-duration:3000ms;-webkit-transform-origin:70% 70%;-webkit-animation-iteration-count:infinite;-webkit-animation-timing-function:linear;cursor:pointer;}
+            #scroll-hint span{margin-left:-7px;margin-top:-6px;position:absolute;top:50%;left:50%;color:#fff;}
+            @media (max-width:992px){#main{padding-top:10px !important;}
+            #main .column1{padding-top:0;}
+            #footer{margin-left:-20px;padding-left:20px;}
+            #wrap{margin:0 auto -380px;}
+            #push,
+            #footer{height:380px;}
+            ul.contact{width:100%;}
+            }
+        </style>
 
         <link rel="icon" href="favicon.ico" />
 
         <meta name="alexaVerifyID" content="IEVUcEKpdm_IOiMkiEz9Lo8yCI4"/>
         <meta name="p:domain_verify" content="fa02746c22d3cc0a3d4e8f27f6eddbb5"/>
-        
-        <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
     </head>
 
     <body>

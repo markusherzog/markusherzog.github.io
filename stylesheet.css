@@ -154,6 +154,10 @@ only screen and (min-device-pixel-ratio: 2) {
 
     cursor: pointer;
     transition: opacity 0.5s linear;
+
+    color: white;
+    padding: 0px 11px;
+    font-size: 27px;
 }
 
 

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Java and Ruby Freelancer in Berlin</title>
-        <meta name="description" content="Markus Herzog ist Java und Ruby Freelancer in Berlin." />
+        <meta name="description" content="Markus Herzog is a Java and Ruby Freelancer in Berlin. He is very good." />
         <meta name="keywords" content="Java Freelancer Berlin, Ruby Freelancer Berlin, Full Stack Developer, Backend, Berlin, Markus Herzog, Java, Spring, JEE, JavaFX, RabbitMQ, Ruby, Ruby On Rails, Sinatra, Padrino, JavaScript, jQuery, CSS, Git, Vagrant, Puppet, Linux, SQL, NoSQL" />
         <link rel="canonical" href="http://www.markusherzog.com" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -41,17 +41,21 @@
             h1,h2,h3{margin-top:20px;margin-bottom:10px;}
             h1{font-size:36px;}
             h2{font-size:30px;}
-            h3{font-size:24px;}
+            h3{font-size:24px;text-align: center;}
             p{margin:0 0 10px;}
             .lead{margin-bottom:20px;font-size:16px;font-weight:300;line-height:1.4;}
-            @media (min-width:768px){.lead{font-size:21px;}
+            @media (min-width:768px){
+              .lead{font-size:21px;}
+
             }
             .text-left{text-align:left;}
             ul{margin-top:0;margin-bottom:10px;}
             .container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;}
             @media (min-width:768px){.container{width:750px;}
             }
-            @media (min-width:992px){.container{width:970px;}
+            @media (min-width:992px){
+              .container{width:970px;}
+              h3{font-size:24px;text-align: left;}
             }
             @media (min-width:1200px){.container{width:1170px;}
             }
@@ -83,16 +87,16 @@
             #footer a{color:#fff;}
             #footer a.btn-sm{color:#000;text-decoration:none;}
             ul.contact{display:table;list-style:none;padding-left:0;}
-            ul.contact li{display:table-cell;}
+            ul.contact li{display:table-cell;float:left;}
             ul.contact li a{margin:0;display:block;text-indent:-9999px;}
             ul.contact li:first-child{padding-left:o;}
             .zoom{-webkit-transition:all 0.2s ease;-moz-transition:all 0.2s ease;-ms-transition:all 0.2s ease;-o-transition:all 0.2s ease;transition:all 0.2s ease;}
             .zoom:hover{-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-ms-transform:scale(1.1);-o-transform:scale(1.1);transform:scale(1.1);}
             html,
             body{height:100%;}
-            #wrap{min-height:100%;height:auto !important;height:100%;margin:0 auto -200px;}
+            #wrap{min-height:100%;height:auto !important;height:100%;margin:0 auto -220px;}
             #push,
-            #footer{height:200px;color:#fff;}
+            #footer{height:220px;color:#fff;}
             #footer,
             #footer .container{background-color:#333;}
             #main{padding-top:60px;padding-bottom:20px;}
@@ -109,15 +113,23 @@
             #hint-wrapper{position:fixed;bottom:10px;right:10px;}
             #scroll-hint{background-color:#fa6600;position:relative;border-radius:50%;width:40px;height:40px;-webkit-animation-name:'pulse_animation';-webkit-animation-duration:3000ms;-webkit-transform-origin:70% 70%;-webkit-animation-iteration-count:infinite;-webkit-animation-timing-function:linear;cursor:pointer;transition:opacity 0.5s linear;}
             #scroll-hint span{position:absolute;top:50%;left:50%;color:#fff;font-size:30px;transform:translate(-50%,-50%);}
-            @media (max-width:992px){#main{padding-top:10px !important;}
-            #main .column1{padding-top:0;}
-            #footer{margin-left:-20px;padding-left:20px;}
-            #wrap{margin:0 auto -380px;}
-            #push,
-            #footer{height:380px;}
-            ul.contact{width:100%;}
+            @media (max-width:992px){
+              #main{padding-top:10px !important;}
+              #main .column1{padding-top:0;}
+              #footer{margin-left:-20px;padding-left:20px;}
+              #wrap{margin:0 auto -380px;}
+              #push,
+              #footer{height:380px;}
+              ul.contact{width:100%;}
             }
             .hidden{opacity:0;}
+            .clientlogo{
+              max-width:110px;
+              max-height: 50px;
+              padding: 5px;
+              -webkit-filter: saturate(0);
+              filter: saturate(0);
+            }
         </style>
         <style>
             @-webkit-keyframes pulse_animation {
@@ -155,28 +167,33 @@
         <div id="footer">
             <div class="container">
                 <row>
-                    <div class="col-md-8" id="aboutme">
-                        <h3>&Uuml;ber mich</h3>
-                        <p>Seit 2000 entwickle ich Web-Applikationen in Java, sp&auml;ter auch in Ruby. Dabei liegen meine St&auml;rken in der technischen Konzeption und Umsetzung der Backends, f&uuml;hle mich aber auch im Frontend wohl.</p>
-                        <p><a href="Markus_Herzog_CV.pdf" rel="me" target="_blank" class="btn-sm btn-info">Download CV</a></p>
+                    <div class="col-md-4" id="aboutme">
+                        <h3>About me</h3>
+                        <p>Since graduating from the University of Stralsund in 2000 with a degree in Business Information Technology, I’ve been developing software, mostly web applications using databases. My strengths lie in the ability to create solid technical concepts and to code backend logic; I feel comfortable with frontend code as well.</p>
+                        <p><a href="Markus_Herzog_en.pdf" rel="me" class="btn-sm btn-info" title="Download CV">Download CV</a></p>
+                    </div>
+                    <div class="col-md-4" id="clients">
+                        <h3>Clients</h3>
+                        <img src="img/omnitrail.png" class="clientlogo" alt="OmniTrail" title="OmniTrail">
+                        <img src="img/trailstone.png" class="clientlogo" alt="TrailStone Group" title="TrailStone Group">
+                        <img src="img/pears-media.svg" class="clientlogo" alt="Pears Media" title="Pears Media">
+                        <img src="img/amazers.svg" class="clientlogo" alt="Amazers" title="Amazers">
+                        <img src="img/exp360.svg" class="clientlogo" alt="Exp360" title="Exp360">
+                        <img src="img/sva.png" class="clientlogo" alt="SVA" title="SVA">
+                        <img src="img/kidsrkids.png" class="clientlogo" alt="Kids R Kids" title="Kids R Kids">
                     </div>
                     <div class="col-md-4">
-                        <h3>Kontakt</h3>
+                        <h3>Contact</h3>
                         <ul class="contact">
-                            <li><a href="mailto:markus@markusherzog.com" rel="me" target="_blank" class="zoom sprite sprite-email">E-Mail</a></li>
-                  
-                            <li><a href="http://www.xing.com/profile/Markus_Herzog2" rel="me" target="_blank" class="zoom sprite sprite-xing">Xing</a></li>
-                  
-                            <li><a href="http://de.linkedin.com/in/markusherzog3000" rel="me" target="_blank" class="zoom sprite sprite-linkedin">LinkedIn</a></li>
+                            <li><a href="mailto:markus@markusherzog.com" rel="me" class="zoom sprite sprite-email" title="Email">Email</a></li>
 
-                            <li><a href="http://twitter.com/markusherzog" rel="me" target="_blank" class="zoom sprite sprite-twitter">Twitter</a></li>
+                            <li><a href="http://twitter.com/markusherzog" rel="me" class="zoom sprite sprite-twitter" title="Twitter">Twitter</a></li>
 
-                            <li><a href="http://github.com/markusherzog" rel="me" target="_blank" class="zoom sprite sprite-github">GitHub</a></li>
-
-                            <li><a href="http://plus.google.com/+MarkusHerzog3000" rel="me" target="_blank" class="zoom sprite sprite-googleplus">Google+</a></li>
+                            <li><a href="http://github.com/markusherzog" rel="me" class="zoom sprite sprite-github" title="GitHub">GitHub</a></li>
                         </ul>
                         <a href="impressum">Impressum</a>
                     </div>
+
                 <row>
             </div>
         </div>
@@ -211,7 +228,7 @@
                     scroll_hint.classList.remove('hidden');
                 }
             }
-            window.addEventListener('scroll', onScrollEventHandler, false);   
+            window.addEventListener('scroll', onScrollEventHandler, false);
             function onScrollEventHandler() {
                 if(small_screen && !scroll_hint_removed) {
                     scroll_hint.classList.add('hidden');
@@ -221,4 +238,3 @@
         </script>
     </body>
 </html>
-

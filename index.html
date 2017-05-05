@@ -103,10 +103,7 @@
             .sprite{background-image:url(img/spritesheet.png);background-repeat:no-repeat;display:block;}
             .sprite-email{width:32px;height:32px;background-position:-5px -5px;}
             .sprite-github{width:32px;height:32px;background-position:-47px -5px;}
-            .sprite-googleplus{width:32px;height:32px;background-position:-5px -47px;}
-            .sprite-linkedin{width:32px;height:32px;background-position:-47px -47px;}
             .sprite-twitter{width:32px;height:32px;background-position:-89px -5px;}
-            .sprite-xing{width:32px;height:32px;background-position:-89px -47px;}
             @media only screen and (-webkit-min-device-pixel-ratio:2),
             only screen and (min-device-pixel-ratio:2){.sprite{background-image:url(img/spritesheet@2x.png);background-size:126px 84px;}
             }
@@ -127,8 +124,8 @@
               max-width:110px;
               max-height: 50px;
               padding: 5px;
-              -webkit-filter: saturate(0);
-              filter: saturate(0);
+              /*-webkit-filter: saturate(0);
+              filter: saturate(0);*/
             }
         </style>
         <style>
@@ -160,7 +157,7 @@
                     <div class="col-md-6">
                         <img width="400px" height="400px" class="img-circle img-polaroid photo img-responsive" src="img/me.jpg" alt="Markus Herzog" title="Markus Herzog" />
                     </div>
-                <row>
+                </row>
             </div>
             <div id="push"></div>
         </div>
@@ -181,6 +178,7 @@
                         <img src="img/exp360.svg" class="clientlogo" alt="Exp360" title="Exp360">
                         <img src="img/sva.png" class="clientlogo" alt="SVA" title="SVA">
                         <img src="img/kidsrkids.png" class="clientlogo" alt="Kids R Kids" title="Kids R Kids">
+                        <img src="img/kreuzwerker-logo.svg" class="clientlogo" alt="Kreuzwerker" title="Kreuzwerker">
                     </div>
                     <div class="col-md-4">
                         <h3>Contact</h3>
@@ -193,8 +191,7 @@
                         </ul>
                         <a href="impressum">Impressum</a>
                     </div>
-
-                <row>
+                </row>
             </div>
         </div>
         <div id="bottom"></div>
@@ -217,7 +214,6 @@
             if (small_screen) {
                 setTimeout(showScrollhint, 3000);
                 scroll_hint.onclick = function(event) {
-                    console.log("click");
                     scroll_hint.classList.add('hidden');
                     window.scrollTo(0, 500);
                 };

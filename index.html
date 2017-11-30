@@ -127,6 +127,26 @@
               /*-webkit-filter: saturate(0);
               filter: saturate(0);*/
             }
+            /* center main content on desktop */
+            @media (min-width:992px){
+                #main {
+                    top: 0;
+                    bottom: 220px;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -moz-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-flex-align: center;
+                    -ms-flex-align: center;
+                    -webkit-align-items: center;
+                    align-items: center;
+                }
+                #main row { width: 100%; }
+            }
         </style>
         <style>
             @-webkit-keyframes pulse_animation {
@@ -148,14 +168,13 @@
         <div id="wrap">
             <div id="main" class="container hcard">
                 <row>
-
                     <div class="col-md-6 column1 text-left">
-                        <h1 class="fn">Markus Herzog</h1>
-                        <h2 class="lead"><span class="title">Java / Ruby / Freelancer</span> / <span class="locality">Berlin</span></h2>
+                        <h1 class="fn">Hello, I'm Markus</h1>
+                        <h2 class="lead"><span class="title">I am a Java &amp; Ruby freelancer</span> in <span class="locality">Berlin</span></h2>
                     </div>
 
                     <div class="col-md-6">
-                        <img width="400px" height="400px" class="img-circle img-polaroid photo img-responsive" src="img/me.jpg" alt="Markus Herzog" title="Markus Herzog" />
+                        <img width="300px" height="300px" class="img-circle img-polaroid photo img-responsive" src="img/me.jpg" alt="Markus Herzog" title="Markus Herzog" />
                     </div>
                 </row>
             </div>
@@ -179,6 +198,7 @@
                         <img src="img/sva.png" class="clientlogo" alt="SVA" title="SVA">
                         <img src="img/kidsrkids.png" class="clientlogo" alt="Kids R Kids" title="Kids R Kids">
                         <img src="img/kreuzwerker-logo.svg" class="clientlogo" alt="Kreuzwerker" title="Kreuzwerker">
+                        <img src="img/silabs.png" class="clientlogo" alt="Service Innovation Labs" title="Service Innovation Labs">
                     </div>
                     <div class="col-md-4">
                         <h3>Contact</h3>

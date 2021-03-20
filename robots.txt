@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: http://www.markusherzog.com/sitemap.xml
